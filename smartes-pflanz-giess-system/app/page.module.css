@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.main.red {
+  background-color: rgb(150, 0, 0);
+}
+
+.main.yellow {
+  background-color: rgb(218, 160, 0);
+}
+
+.main.green {
+  background-color: rgb(71, 195, 0);
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.feuchtigkeitswert {
+  font-size:28px;
+  font-weight: 800;
+
+  margin-top: 30px;
+}
