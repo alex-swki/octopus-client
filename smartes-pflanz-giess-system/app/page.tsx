@@ -26,7 +26,7 @@ export default function Home() {
     getData();
     const refreshInterval = setInterval(() => {
       getData();
-    }, 1000);
+    }, 500);
 
     return () => clearInterval(refreshInterval);
   }, []);
@@ -34,7 +34,7 @@ export default function Home() {
   if (isLoading)
     return (
       <main className={styles.main}>
-        <h1>Aktueller Feuchtigkeitswert: --,--%</h1>
+        <h1>Lade ...</h1>
       </main>
     );
   if (!feuchtigkeit) return <p>Keine Daten</p>;
